@@ -1,0 +1,8 @@
+@use '../../styles/variables' as *;
+
+.Hero__Banner {
+    background-image: url("/images/bghm.png") !important;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
