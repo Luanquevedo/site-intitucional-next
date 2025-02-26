@@ -1,0 +1,62 @@
+@use '../../styles/variables' as *;
+
+.Contact {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 23rem;
+    gap: 3rem;
+
+    h2{
+        font-size: 1.4rem;
+        font-weight: $font-semibold;
+        color: $secondaryfontcolor;
+    }
+
+
+    &__Content {
+        display: flex;
+        flex-direction: column;
+        gap: 0.7rem;
+        font-size: 0.8rem;
+        text-align: justify;
+        font-weight: $font-regular;
+
+        strong {
+            font-size: 0.9rem;
+            font-weight: $font-medium;
+        }
+    }
+}
+
+@media (min-width: 768px){
+    .Contact {
+        max-width: 64rem;
+        gap: 3rem;
+    
+        h2{
+            font-size: 1.5rem;
+        }
+    
+    
+        &__Content {
+            gap: 3rem;
+            font-size: 1.1rem;
+            
+    
+            strong {
+                font-size: 1.2rem;
+
+            }
+        }
+    }
+    
+}
+
+@media (min-width: 1900px){
+    .Contact {
+        max-width: 1440px;
+
+    }
+    
+}
