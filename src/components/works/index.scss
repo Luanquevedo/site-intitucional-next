@@ -1,0 +1,174 @@
+@use '../../styles/variables' as *;
+
+.Work {
+    display: flex;
+    flex-direction: column;
+    color: $tertiaryfonttcolor;
+    background-color: $backgroudcolor;
+
+    &__Container {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        margin: auto;
+        max-width: 23rem;
+        font-size: 1.1rem;
+        font-weight: $font-regular;
+
+        h2 {
+            margin-top: 2rem;
+            font-weight: $font-semibold;
+            font-size: 1.5rem;
+        }
+
+        h3 {
+            font-weight: $font-medium;
+            font-size: 1.5rem;
+        }
+
+        &__Content {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            text-align: justify;
+        }
+
+        &__Card {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin-bottom: 3rem;
+
+            img {
+                width: 10rem;
+            }
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                text-align: center;
+                list-style: none;
+                gap: 2rem;
+
+                p {
+                    max-width: 10rem;
+                }
+            }
+        }
+    }
+}
+
+.work__container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    margin-top: 3rem;
+    max-width: 23rem;
+    gap: 2rem;
+    
+    h2{
+        color: $secondaryfontcolor;
+        font-weight: $font-semibold;
+        font-size: 1.5rem;
+    }
+    .none{
+        display: none;
+    }
+
+    &__services{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-bottom: 4rem;
+        font-size: 0.98rem;
+        text-align: justify;
+        font-weight: $font-regular;
+        h3{
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: $secondaryfontcolor;
+            font-weight: $font-medium;
+        }
+    }
+}
+
+@media (min-width: 769px) {
+    .Work {
+    
+        &__Container {
+            gap: 4rem;
+            max-width: 62rem;
+            font-size: 1.22rem;
+    
+            h2 {
+                margin-top: 5rem;
+                font-size: 1.5rem;
+            }
+    
+            h3 {
+                font-size: 1.5rem;
+            }
+    
+            &__Content {
+                gap: 3rem;
+            }
+    
+            &__Card {
+                gap: 3rem;
+                margin-bottom: 7rem;
+    
+                img {
+                    width: 15rem;
+                }
+    
+                ul {
+                    gap: 3rem;
+    
+                    p {
+                        max-width: 15rem;
+                    }
+                }
+            }
+        }
+    }
+    .work__container{
+        margin-top: 6rem;
+        max-width: 62rem;
+        gap: 2rem;
+        h2{
+            font-size: 1.5rem;
+        }
+    
+        &__services{
+
+            gap: 2.5rem;
+            margin-bottom: 5rem;
+            font-size: 1.2rem;
+            h3{
+                font-size: 1.4rem;
+                margin-bottom: 1.2rem;
+            }
+        }
+    }
+
+}
+
+@media (min-width: 1900px) {
+    .Work {
+    
+        &__Container {
+           
+            max-width: 1440px;
+            
+    
+            
+            
+        }
+    }
+    .work__container{
+        max-width: 1440px;
+    }
+
+}

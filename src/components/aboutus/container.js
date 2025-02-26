@@ -22,13 +22,13 @@ const AboutContainer = () => {
           content="diferenciais, personalização de evento, ingredientes de qualidade, equipe especializada, buffet exclusivo"
         />
       </Head>
-
+      <div className='About__Content'>
       <header>
-        <h1>Diferenciais</h1>
+        <h2>Diferenciais</h2>
       </header>
 
-      <article>
-        <h2>O que nos torna únicos</h2>
+      <article className='About__Content__Itens'>
+        <h3>O que nos torna únicos</h3>
         <ul>
           {diferenciais.map((diferencial, index) => (
             <li key={index} className="differential-item">
@@ -42,6 +42,7 @@ const AboutContainer = () => {
           ))}
         </ul>
       </article>
+      </div>
     </section>
   );
 };

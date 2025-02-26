@@ -1,6 +1,8 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 const card = [
   { id: 1, image: '/images/c1.png', alt: 'Imagem 1: Exemplo de serviço de buffet elegante em evento' },
@@ -12,33 +14,33 @@ const card = [
 
 const CardCarrousel = () => {
   return (
-    <div className="card-carousel">
-      <h2 className="card-carousel__title">Galeria de Eventos</h2>
-      <div className="card-carousel__container">
-        <Swiper
-          slidesPerView={3}
-          modules={[Pagination, Autoplay]}
-          autoplay={{ delay: 300, disableOnInteraction: false }}
-          speed={700}
-          pagination={{ clickable: true }}
-          breakpoints={{
-            768: {
-              slidesPerView: 2, // Ajusta para 1 slide por vez em telas menores
-            },
-          }}
-        >
-          {card.map((item) => (
-            <SwiperSlide key={item.id}>
-              <img
-                src={item.image}
-                alt={item.alt}
-                className="card-carousel__image"
-                loading='lazy'
-              />
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
+    <div className="card__carousel">
+      <h2 className="card__carousel__title">Galeria</h2>
+      <Swiper
+        className="card__carousel__container"
+        slidesPerView={4} // Exibe 3 imagens no desktop
+        spaceBetween={20}
+        autoplay={{ delay: 2, disableOnInteraction: false }}
+        speed={5000}
+        loop={true} // 🟢 Ativa o loop infinito
+        modules={[Pagination, Autoplay]}
+        breakpoints={{
+          320: {
+            slidesPerView: 2, // No mobile, exibe 2 imagens
+            spaceBetween: 0,
+          },
+          768: {
+            slidesPerView: 3, // No tablet, exibe 3 imagens
+            spaceBetween: 0,
+          },
+        }}
+      >
+        {card.map((item) => (
+          <SwiperSlide key={item.id} className="card__carousel__slide">
+            <img src={item.image} alt={item.alt} className="card-carousel__image" loading="lazy" />
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </div>
   );
 };

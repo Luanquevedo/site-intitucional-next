@@ -8,19 +8,20 @@ const segmentos = [
 
 const Work = () => {
   return (
-    <section>
+    <section className='Work'>
+      <div className='Work__Container'>
       <header>
         <h2>Serviços</h2>
       </header>
 
-      <article>
+      <article className='Work__Container__Content'>
         <h3>Buffet Personalizado</h3>
         <p>
           Oferecemos um <strong>cardápio exclusivo e adaptável</strong> às suas preferências, garantindo uma experiência gastronômica sofisticada e memorável para seus convidados.
         </p>
       </article>
 
-      <article>
+      <article className='Work__Container__Card'>
         <h3>Tipos de Eventos</h3>
         <ul>
           {segmentos.map((item) => (
@@ -31,6 +32,7 @@ const Work = () => {
           ))}
         </ul>
       </article>
+      </div>
     </section>
   );
 };

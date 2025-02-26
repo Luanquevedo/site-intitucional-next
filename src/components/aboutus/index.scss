@@ -1,6 +1,6 @@
 @use '../../styles/variables' as *;
 
-.About{
+.About {
     background-image: url('/images/aboutus.png');
     background-repeat: no-repeat;
     background-size: contain;
@@ -14,56 +14,138 @@
     margin: auto;
     font-size: 1.1rem;
     font-weight: $font-medium;
-    
-    &__Container{
+
+    &__Container {
         display: flex;
         flex-direction: column;
         gap: 2rem;
         color: $tertiaryfonttcolor;
         max-width: 23rem;
-        h2{
+
+        h2 {
             font-weight: $font-semibold;
             font-size: 1.5rem;
             margin-bottom: 2rem;
         }
     }
 
-    &__None{
+    &__None {
         display: none;
     }
 }
 
+.About__Content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    max-width: 23rem;
+    gap: 2rem;
+
+    h2 {
+        color: $secondaryfontcolor;
+        font-weight: $font-semibold;
+        font-size: 1.5rem;
+    }
+
+
+    &__Itens {
+        font-size: 1.1rem;
+        font-weight: $font-regular;
+
+        img {
+            width: 2rem;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+        }
+
+        li {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            text-align: justify;
+        }
+
+        h3 {
+            display: none;
+        }
+    }
+}
+
 @media (min-width: 769px) {
-    .About{
+    .About {
         background-image: url('/images/aboutd.png');
         background-size: cover;
         background-position: center;
         height: 100vh;
         font-size: 1.22rem;
-        
-        &__Container{
+
+        &__Container {
             gap: 5rem;
             max-width: 62rem;
-            
-            h2{
-                
-               
+
+            h2 {
+
+
                 font-size: 1.5rem;
-                
+
                 margin-bottom: 5rem;
             }
         }
     }
+
+    .About__Content {
+        display: flex;
+        max-width: 62rem;
+        margin-top: 5rem;
+        gap: 2rem;
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+
+        &__Itens {
+            display: flex;
+            flex-direction: column;
+            margin-left: 6rem;
+            font-size: 1.3rem;
+            margin-bottom: 5rem;
+
+            img {
+                width: 2rem;
+            }
+
+            ul {
+
+                gap: 3rem;
+            }
+
+            li {
+                gap: 1rem;
+            }
+        }
+    }
+
+
 }
 
 @media (min-width: 1900px) {
-    .About{
+    .About {
 
-        
-        &__Container{
+
+        &__Container {
             max-width: 1440px;
-            
-            
+
+
         }
+    }
+
+    .About__Content {
+        max-width: 1440px;
     }
 }
