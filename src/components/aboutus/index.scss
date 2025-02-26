@@ -1,0 +1,69 @@
+@use '../../styles/variables' as *;
+
+.About{
+    background-image: url('/images/aboutus.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 606px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    margin: auto;
+    font-size: 1.1rem;
+    font-weight: $font-medium;
+    
+    &__Container{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        color: $tertiaryfonttcolor;
+        max-width: 23rem;
+        h2{
+            font-weight: $font-semibold;
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__None{
+        display: none;
+    }
+}
+
+@media (min-width: 769px) {
+    .About{
+        background-image: url('/images/aboutd.png');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        font-size: 1.22rem;
+        
+        &__Container{
+            gap: 5rem;
+            max-width: 62rem;
+            
+            h2{
+                
+               
+                font-size: 1.5rem;
+                
+                margin-bottom: 5rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 1900px) {
+    .About{
+
+        
+        &__Container{
+            max-width: 1440px;
+            
+            
+        }
+    }
+}

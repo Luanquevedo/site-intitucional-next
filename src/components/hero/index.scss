@@ -1,0 +1,115 @@
+@use '../../styles/variables' as *;
+
+.Hero__Banner {
+    background-image: url('/images/bghm.png'); /* Caminho correto para a pasta public */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: $tertiaryfonttcolor;
+    font-family: $tertiaryfont;
+    
+    
+
+    &__Destaque{
+      margin-top: 4.5rem;
+      color: $yellow;
+      font-size: 1.8rem;
+      font-weight: $font-semibold;
+      
+    }
+
+    &__Complemento{
+      font-size: 1.5rem;
+      max-width: 19rem;
+      font-weight: $font-regular;
+    }
+  }
+  .Hero__Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    max-width: 23rem;
+    font-size: 1.1rem;
+    font-weight: $font-regular;
+    gap: 2rem;
+    text-align: justify;
+
+    &__Experience{
+      margin-top: 3rem;
+    }
+
+    img{
+      width: 2rem;
+    }
+    ul{
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+    }
+  }
+  .itens{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-align: justify;
+  }
+  
+
+  @media (min-width: 769px) {
+    .Hero__Banner {
+      background-image: url('/images/bghd.png'); /* Caminho correto para a pasta public */
+      background-size: cover;
+      background-position: center;
+      height: 100vh; /* Altura ajustada para a tela */
+      
+
+      &__Destaque{
+        margin-top: 0rem;
+        font-size: 3rem;
+        
+        
+      }
+  
+      &__Complemento{
+        font-size: 2.5rem;
+        max-width: 571px;
+        font-weight: $font-regular;
+      }
+    
+    }
+    .Hero__Container{
+      max-width: 62rem;
+      font-size: 1.3rem;
+      gap: 4rem;
+      text-align: justify;
+  
+      &__Experience{
+        margin-top: 4rem;
+      }
+  
+      img{
+        width: 2rem;
+      }
+      ul{
+        max-width: 53rem;
+        gap: 3rem;
+      }
+    }
+  }
+
+  @media (min-width: 1900px) {
+    .Hero__Container{
+
+      max-width: 1440px;
+    }
+    
+  }

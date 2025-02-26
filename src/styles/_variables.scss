@@ -1,10 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&family=Enriqueta:wght@400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 $primaryfont: 'Eczar', sans-serif;
 $secondaryfont: 'Montserrat', sans-serif;
+$tertiaryfont: 'Enriqueta', sans-serif;
 
 
 $backgroudcolor: #304965;
 $backgroudcolorSecondary: #F3F2FF;
 $fontcolor: #1E1E1E;
 $secondaryfontcolor: #252B49;
+$tertiaryfonttcolor: #F3F2FF;
+$yellow: #FFD700;
+
+
+// Pesos para Eczar (principal)
+$font-regular: 400;
+$font-medium: 500;
+$font-semibold: 600;
+$font-bold: 700;
+$font-extrabold: 800;
+
+// Pesos para Montserrat (caso precise para textos menores, botões, etc.)
+$montserrat-regular: 400;
+$montserrat-medium: 500;
+$montserrat-semibold: 600;
+$montserrat-bold: 700;

@@ -1,13 +1,13 @@
 import '../styles/globals.scss'
 import '../styles/_variables.scss'
-import '../components/aboutus/banner.module.scss'
-import '../components/aboutus/container.module.scss'
-import '../components/contact/contact.module.scss'
-import '../components/footer/footer.module.scss'
-import '../components/galery/card.module.scss'
-import '../components/hero/banner.module.scss'
-import '../components/hero/container.module.scss'
-import '../components/nav/navbar.module.scss'
+import '../components/aboutus/index.scss'
+import '../components/aboutus/index.scss'
+import '../components/contact/index.scss'
+import '../components/footer/index.scss'
+import '../components/galery/index.scss'
+import '../components/hero/index.scss'
+import '../components/hero/index.scss'
+import '../components/nav/index.scss'
 
 function MyApp({ Component, pageProps }) {
     return (

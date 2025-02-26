@@ -29,9 +29,16 @@ export default function Home() {
         <meta name="twitter:description" content="Oferecemos um buffet com a melhor qualidade, ideal para eventos inesquecíveis." />
         <meta name="twitter:image" content="/images/og-image.jpg" />
       </Head>
-
+      <Navbar />
       <HeroBanner />
-     
+      <HeroContainer />
+      <AboutBanner />
+      <AboutContainer />
+      <Work />
+      <WorkContainer />
+      <CardCarrousel />
+      <Contact />
+      <Footer />
     </div>
   );
 }
