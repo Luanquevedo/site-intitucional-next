@@ -10,17 +10,16 @@ const NAV_LINKS = [
   { href: "#home", label: "Home" },
   { href: "#about", label: "Sobre nós" },
   { href: "#services", label: "Serviços" },
-  { href: "#atendimento", label: "Área de atendimento" },
-  { href: "#contact", label: "Contatos" },
+  { href: "#atendimento", label: "Área de atendimento" }
 ];
 
 const Navbar = () => {
   // Estado para controlar a seção ativa no menu
   const [activeSection, setActiveSection] = useState("");
-  
+
   // Estado para verificar se a tela é mobile
   const [isMobile, setIsMobile] = useState(false);
-  
+
   // Estado para controlar a abertura/fechamento do menu
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -66,7 +65,7 @@ const Navbar = () => {
         {/* Navbar para mobile: Menu Hamburguer */}
         {isMobile ? (
           <Menu
-            right
+            noTransition
             isOpen={isMenuOpen}
             onStateChange={({ isOpen }) => setIsMenuOpen(isOpen)} // Atualiza o estado ao abrir/fechar o menu
           >

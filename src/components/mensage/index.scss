@@ -1,56 +1,78 @@
-$form-color: #f5f5f5;
-$button-color: #25d366; // Cor do WhatsApp
-$border-radius: 8px;
+@use '../../styles/variables' as *;
 
-.form {
-  max-width: 400px;
-  margin: auto;
-  padding: 1.5rem;
-  background: $form-color;
-  border-radius: $border-radius;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+.Mensage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 2REM;
+  gap: 2rem;
+  color: $fontcolor;
 
   h2 {
     text-align: center;
-    margin-bottom: 1rem;
-    color: #333;
+    font-size: 1.3rem;
+    font-weight: $font-semibold;
+    width: 21rem;
+    font-family: $primaryfont;
   }
 
-  label {
-    display: block;
-    margin-top: 0.8rem;
-    font-weight: bold;
-    color: #444;
-  }
+  align-items: center;
 
-  input, textarea {
-    width: 100%;
-    padding: 0.6rem;
-    margin-top: 0.3rem;
-    border: 1px solid #ccc;
-    border-radius: $border-radius;
-    font-size: 1rem;
-  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 
-  textarea {
-    resize: none;
-  }
+    input {
+      background-color: #B1C2D4;
+      border: none;
+      border-radius: 10px;
+      height: 2.2rem;
+      box-shadow: 0px 4px 4px 0px #00000050;
+    }
 
-  button {
-    width: 100%;
-    padding: 0.8rem;
-    margin-top: 1rem;
-    background: $button-color;
-    border: none;
-    color: white;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: $border-radius;
-    cursor: pointer;
-    transition: 0.3s;
+    textarea {
+      background-color: #B1C2D4;
+      border: none;
+      border-radius: 10px;
+      height: 6rem;
+      box-shadow: 0px 4px 4px 0px #00000050;
+    }
 
-    &:hover {
-      background: darken($button-color, 10%);
+    label {
+      font-size: 1.2rem;
+      font-weight: $font-regular;
+      font-family: $secondaryfont;
     }
   }
+}
+
+.bt {
+  margin: auto;
+  margin-top: 3.7rem;
+  margin-bottom: 3.7rem;
+  width: 16rem;
+  height: 4rem;
+  font-size: 1rem;
+  background-color: transparent;
+  color: $bta;
+  border: 3px solid $bta;
+  font-weight: $font-semibold;
+  border-radius: 1rem;
+  padding: 10px;
+
+  &:hover {
+    color: $tertiaryfonttcolor;
+    background-color: $bta;
+    transform: scaleX(7rem);
+    transition: 0.5s ease;
+  }
+}
+
+.Mensage__Form__itens {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  width: 21rem;
 }

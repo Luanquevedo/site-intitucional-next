@@ -41,29 +41,78 @@ const FormContato = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <h2>Entre em Contato</h2>
-
-      <label htmlFor="nome">Nome Completo</label>
-      <input type="text" id="nome" name="nome" value={formData.nome} onChange={handleChange} required />
-
-      <label htmlFor="email">E-mail</label>
-      <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required />
-
-      <label htmlFor="telefone">Telefone</label>
-      <input type="tel" id="telefone" name="telefone" value={formData.telefone} onChange={handleChange} required />
-
-      <label htmlFor="tipoEvento">Tipo de Evento</label>
-      <input type="text" id="tipoEvento" name="tipoEvento" value={formData.tipoEvento} onChange={handleChange} required />
-
-      <label htmlFor="dadosDesejados">Dados Desejados</label>
-      <input type="text" id="dadosDesejados" name="dadosDesejados" value={formData.dadosDesejados} onChange={handleChange} required />
-
-      <label htmlFor="mensagem">Mensagem</label>
-      <textarea id="mensagem" name="mensagem" value={formData.mensagem} onChange={handleChange} rows="4" required></textarea>
-
-      <button type="submit">Enviar Mensagem</button>
-    </form>
+    <section className="Mensage">
+      <h2>Preencha seus dados e solicite um orçamento</h2>
+      <form onSubmit={handleSubmit}>
+        <div className="Mensage__Form__itens">
+          <label htmlFor="nome">Nome Completo</label>
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            value={formData.nome}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className="Mensage__Form__itens">
+          <label htmlFor="email">E-mail</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className="Mensage__Form__itens">
+          <label htmlFor="telefone">Telefone</label>
+          <input
+            type="tel"
+            id="telefone"
+            name="telefone"
+            value={formData.telefone}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className="Mensage__Form__itens">
+          <label htmlFor="tipoEvento">Tipo de Evento</label>
+          <input
+            type="text"
+            id="tipoEvento"
+            name="tipoEvento"
+            value={formData.tipoEvento}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className="Mensage__Form__itens">
+          <label htmlFor="dadosDesejados">Dados Desejados</label>
+          <input
+            type="text"
+            id="dadosDesejados"
+            name="dadosDesejados"
+            value={formData.dadosDesejados}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className="Mensage__Form__itens">
+          <label htmlFor="mensagem">Mensagem</label>
+          <textarea
+            id="mensagem"
+            name="mensagem"
+            value={formData.mensagem}
+            onChange={handleChange}
+            rows="4"
+            required
+          ></textarea>
+        </div>
+        <button className='bt' type="submit">Enviar Mensagem</button>
+      </form>
+    </section>
   );
 };
 

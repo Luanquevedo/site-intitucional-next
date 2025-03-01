@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-      <meta name="description" content="No Tempero da Grazzy, oferecemos um buffet personalizado e adaptável, com serviços completos para eventos como bodas, noivados e jantares familiares. Garantimos sofisticação e qualidade." />
+        <meta name="description" content="No Tempero da Grazzy, oferecemos um buffet personalizado e adaptável, com serviços completos para eventos como bodas, noivados e jantares familiares. Garantimos sofisticação e qualidade." />
         <meta name="keywords" content="buffet, eventos personalizados, noivados, bodas, jantares, almoços, sofisticação, qualidade, serviço completo" />
         <meta name="author" content="Tempero da Grazzy" />
         <meta name="robots" content="index, follow" />
@@ -29,25 +29,21 @@ export default function Home() {
         <meta name="twitter:description" content="Oferecemos um buffet com a melhor qualidade, ideal para eventos inesquecíveis." />
         <meta name="twitter:image" content="/images/og-image.jpg" />
       </Head>
-      <Navbar />
       <section id="home">
-      <HeroBanner />
-      <HeroContainer />
+        <HeroBanner />
+        <HeroContainer />
       </section>
       <section id="about">
-      <AboutBanner />
-      <AboutContainer />
+        <AboutBanner />
+        <AboutContainer />
       </section>
       <section id="services">
-      <Work />
-      <WorkContainer />
-      <CardCarrousel />
+        <Work />
+        <WorkContainer />
+        <CardCarrousel />
       </section>
       <section id="atendimento">
-      <Contact />
-      </section>
-      <section id="contact">
-      <Footer />
+        <Contact />
       </section>
     </div>
   );

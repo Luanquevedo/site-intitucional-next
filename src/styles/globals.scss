@@ -1,4 +1,10 @@
 @use './variables' as *;
+/* Remover margin e padding para garantir que o conteúdo comece sem espaçamento */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Garante que a altura ocupe toda a tela */
+}
 
 body {
   background-color: $backgroudcolorSecondary;
@@ -8,12 +14,9 @@ body {
   color: $fontcolor;
   line-height: 1.5;
   letter-spacing: 0.5px;
-  strong{
-    font-weight: normal;
-  }
 }
 
-* {
-  padding: 0;
-  margin: 0;
+strong {
+  font-weight: normal;
 }
+
