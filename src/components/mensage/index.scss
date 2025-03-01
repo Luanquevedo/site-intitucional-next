@@ -1,0 +1,56 @@
+$form-color: #f5f5f5;
+$button-color: #25d366; // Cor do WhatsApp
+$border-radius: 8px;
+
+.form {
+  max-width: 400px;
+  margin: auto;
+  padding: 1.5rem;
+  background: $form-color;
+  border-radius: $border-radius;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+  h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+
+  label {
+    display: block;
+    margin-top: 0.8rem;
+    font-weight: bold;
+    color: #444;
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 0.6rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: $border-radius;
+    font-size: 1rem;
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  button {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 1rem;
+    background: $button-color;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: $border-radius;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      background: darken($button-color, 10%);
+    }
+  }
+}
