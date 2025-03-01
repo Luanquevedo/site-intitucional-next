@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 const HeroContainer = () => {
   return (
@@ -29,6 +30,11 @@ const HeroContainer = () => {
           </li>
         </ul>
       </article>
+      <div className='Hero__Container__B'>
+      <Link href="/form" prefetch={false}>
+        <button aria-label="Solicite um orçamento"> Solicite um Orçamento</button>
+      </Link>
+      </div>
     </section>
   );
 };

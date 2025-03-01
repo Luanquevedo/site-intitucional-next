@@ -1,0 +1,159 @@
+@use '../../styles/variables' as *;
+
+.navbar {
+  display: flex;
+  position: fixed !important;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 6.5rem;
+  background-color: $backgroudcolor;
+  position: relative;
+  z-index: 10; // Garante que a navbar fique sobre outros elementos, mas abaixo do menu
+  border-bottom: none;
+  margin: 0;
+
+  &__Itens {
+    margin-right: 1rem;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+/* Estilização dos links */
+.navbar__Itens__Link {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1rem;
+  color: white;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+.navbar__Itens__Link:hover {
+  color: $yellow;
+}
+
+/* Estilo para o link ativo */
+.navbar__Itens__Link.active {
+  color: $yellow;  /* Destaca o link ativo */
+  font-weight: bold;  /* Pode adicionar mais estilos, como negrito */
+}
+
+/* Estilização do botão de orçamento */
+.navbar__Form button {
+  background-color: transparent;
+  border: 2px solid $yellow;
+  color: $tertiaryfonttcolor;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar__Form button:hover {
+  background-color: $yellow;
+  color: $fontcolor;
+}
+
+/* Estilos do menu mobile */
+.bm-burger-button {
+  position: absolute;
+  width: 2.1rem;
+  height: 1.4rem;
+  left: 20px;
+  top: 2rem;
+  z-index: 15; /* Garante que o botão fique sobre o menu */
+}
+
+.bm-burger-bars {
+  background: $tertiaryfonttcolor;
+  transition: none; /* Remove transições de animação no botão */
+}
+
+/* Estilos do menu suspenso (menu hamburguer) */
+.bm-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh; /* Assegura que a altura ocupe 100% da tela */
+  background: $backgroudcolor;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0; /* Remove o padding, caso haja algum espaço extra */
+  z-index: 20; /* Garante que o menu esteja por cima da navbar */
+  transition: none; /* Remove a transição para a animação não afetar a posição */
+}
+.bm-menu-wrap {
+  margin: 0; /* Remove margens que possam criar espaços extras */
+  padding: 0; /* Remover padding extra */
+}
+
+/* Evitar rolagem do fundo quando o menu estiver aberto */
+body.menu-open {
+  overflow: hidden; /* Garante que o conteúdo da página não se mova */
+}
+
+/* Centralizar o logo dentro do menu */
+.bm-menu .navbar__Logo {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Estilo do botão de fechar no menu mobile */
+.menu__close-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 25; /* Garante que o botão de fechar esteja sobre o menu */
+}
+
+.menu__close-btn:hover {
+  color: #ffb800;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+  .navbar {
+    height: 5rem;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    justify-content: center;
+
+    &__Form {
+      margin-top: 1rem;
+    }
+  }
+
+  Footer {
+    margin-top: 4rem;
+  }
+
+  .navbar__Itens {
+    display: none; // Esconde os itens da navbar no mobile
+    margin-top: 10rem;
+    margin-left: 5vh;
+    margin-right: 5vh;
+
+    &__Link {
+      margin-top: 1rem;
+    }
+  }
+
+  .navbar__Logo {
+    display: block;
+  }
+}

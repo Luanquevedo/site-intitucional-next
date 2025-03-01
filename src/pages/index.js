@@ -30,15 +30,25 @@ export default function Home() {
         <meta name="twitter:image" content="/images/og-image.jpg" />
       </Head>
       <Navbar />
+      <section id="home">
       <HeroBanner />
       <HeroContainer />
+      </section>
+      <section id="about">
       <AboutBanner />
       <AboutContainer />
+      </section>
+      <section id="services">
       <Work />
       <WorkContainer />
       <CardCarrousel />
+      </section>
+      <section id="atendimento">
       <Contact />
+      </section>
+      <section id="contact">
       <Footer />
+      </section>
     </div>
   );
 }

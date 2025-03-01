@@ -1,5 +1,29 @@
 @use '../../styles/variables' as *;
 
+.B {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 7rem;
+    margin-bottom: 3rem;
+    button {
+      width: 16rem;
+      height: 4rem;
+      font-size: 1rem;
+      background-color: $bta;
+      color: $tertiaryfonttcolor;
+      border: 3px solid $bta; 
+      font-weight: $font-semibold;
+      border-radius: 1rem;
+      padding: 10px;
+      &:hover {
+        color: $bta;
+        background-color: transparent;
+        transform: scaleX(7rem);
+        transition: 0.5s ease;
+            }
+    }
+}
+
 .Contact {
     display: flex;
     flex-direction: column;
@@ -48,6 +72,29 @@
                 font-size: 1.2rem;
 
             }
+        }
+    }
+    .B {
+        margin-left: 35.5%;
+        margin-right: 35.5%;
+        margin-top: 15rem;
+        margin-bottom: 6rem;
+        button {
+          width: 27rem;
+          height: 5rem;
+          font-size: 1.2rem;
+          background-color: $bta;
+          color: $tertiaryfonttcolor;
+          border: 3px solid $bta; 
+          font-weight: $font-semibold;
+          border-radius: 1rem;
+          padding: 10px;
+          &:hover {
+            color: $bta;
+            background-color: transparent;
+            transform: scaleX(7rem);
+            transition: 0.5s ease;
+                }
         }
     }
     

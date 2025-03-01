@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import Link from 'next/link';
 
 const Contact = () => {
   return (
@@ -14,12 +15,17 @@ const Contact = () => {
         <header>
           <h2>Áreas de Atendimento</h2>
         </header>
-        
+
         <article className='Contact__Content'>
           <p><strong>São Paulo</strong> – Jardins, Higienópolis, Zonas Sul, Leste e Oeste</p>
           <p><strong>Brasília, Recife, Ceará, Minas Gerais, Florianópolis</strong></p>
         </article>
       </section>
+      <div className='B'>
+        <Link href="/form" prefetch={false}>
+          <button aria-label="Solicite um orçamento"> Solicite um Orçamento</button>
+        </Link>
+      </div>
     </div>
   );
 };
