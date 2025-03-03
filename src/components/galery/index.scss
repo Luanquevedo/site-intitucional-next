@@ -7,43 +7,52 @@
     gap: 2rem;
     margin-bottom: 3rem;
     
-
     &__container {
         width: 100%;
-        
-        margin: 0px;
+        margin: 0;
 
         .swiper-slide {
             width: auto;
             display: flex;
-            flex-direction: row ;
+            flex-direction: row;
             justify-content: center;
             align-items: center;
-          }
-
-       
+        }
     }
+
     .card-carousel__image {
         width: 100%;
         height: auto;
         object-fit: cover;
-      }
+    }
 
     h2 {
-        margin-left: 1rem;
+        margin-left: 12rem;
         color: $secondaryfontcolor;
         font-size: 1.5rem;
         font-weight: $font-semibold;
+          // Centralizando o título para melhor aparência em todos os tamanhos de tela
     }
 }
 
+// Responsividade para telas menores
+@media (max-width: 768px) {
+    .card__carousel {
+        gap: 1rem; // Reduzindo o gap para telas menores
+
+        h2 {
+            font-size: 1.2rem;
+            
+            margin-left: 2.2; // Remover a margem esquerda em telas menores
+        }
+    }
+}
+
+// Responsividade para telas grandes (1900px)
 @media (min-width: 1900px) {
     .card__carousel {
-        
-    
-    
         h2 {
-            margin-left: 34rem;
+            margin-left: 34rem; // Ajuste maior para telas grandes
         }
     }
 }

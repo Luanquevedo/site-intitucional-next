@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+import Head from 'next/head';
 import HeroBanner from "@/components/hero/banner";
 import HeroContainer from "@/components/hero/container";
 import AboutBanner from "@/components/aboutus/banner";
@@ -7,9 +9,19 @@ import WorkContainer from "@/components/works/container";
 import CardCarrousel from "@/components/galery/card";
 import Contact from "@/components/contact/contact";
 import Footer from "@/components/footer/footer";
-import Head from "next/head";
 
 export default function Home() {
+  useEffect(() => {
+    // Verifica se há uma hash na URL e faz o scroll para a seção
+    if (window.location.hash) {
+      const targetId = window.location.hash.substring(1); // Remove o '#' da hash
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, []); // O efeito só será executado uma vez, quando o componente for montado
+
   return (
     <div>
       <Head>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
@@ -12,37 +12,45 @@ const card = [
   { id: 5, image: '/images/c5.png', alt: 'Imagem 5: Buffet personalizado com decoração temática' },
 ];
 
-const CardCarrousel = () => {
+// Memoize para evitar renderizações desnecessárias
+const CardCarrousel = memo(() => {
   return (
-    <div className="card__carousel">
-      <h2 className="card__carousel__title">Galeria</h2>
+    <section className="card__carousel" aria-labelledby="gallery-title">
+      <h2 id="gallery-title" className="card__carousel__title">Galeria</h2>
       <Swiper
         className="card__carousel__container"
-        slidesPerView={4} // Exibe 3 imagens no desktop
+        slidesPerView={4}
         spaceBetween={20}
-        autoplay={{ delay: 2, disableOnInteraction: false }}
+        autoplay={{ delay: 2000, disableOnInteraction: false }}
         speed={5000}
-        loop={true} // 🟢 Ativa o loop infinito
+        loop={true}
         modules={[Pagination, Autoplay]}
         breakpoints={{
           320: {
-            slidesPerView: 2, // No mobile, exibe 2 imagens
+            slidesPerView: 2,
             spaceBetween: 0,
           },
           768: {
-            slidesPerView: 3, // No tablet, exibe 3 imagens
+            slidesPerView: 3,
             spaceBetween: 0,
           },
         }}
       >
         {card.map((item) => (
           <SwiperSlide key={item.id} className="card__carousel__slide">
-            <img src={item.image} alt={item.alt} className="card-carousel__image" loading="lazy" />
+            <img 
+              src={item.image} 
+              alt={item.alt} 
+              className="card-carousel__image" 
+              loading="lazy" 
+              width={300} // Tamanho recomendado de acordo com o design
+              height={300} 
+            />
           </SwiperSlide>
         ))}
       </Swiper>
-    </div>
+    </section>
   );
-};
+});
 
 export default CardCarrousel;

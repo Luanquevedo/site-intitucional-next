@@ -3,37 +3,55 @@ import Link from 'next/link';
 
 const HeroContainer = () => {
   return (
-    <section className="Hero__Container">
+    <section className="Hero__Container" role="region" aria-labelledby="hero-section">
       <article className="Hero__Container__Experience">
         <p>
-          Transformamos seu evento em uma <strong>experiência única</strong>, personalizada para refletir sua história, cultura e gostos. Nosso <strong>buffet especializado</strong> oferece um serviço completo, garantindo <strong>sofisticação, qualidade e atenção a cada detalhe</strong>.
+          No <strong>Tempero da Grazzy</strong>, acreditamos que a culinária vai muito além do sabor – ela é <span className="highlight">afeto, memória e história</span>. Criamos experiências gastronômicas exclusivas, trazendo o melhor dos sabores em cada evento.
         </p>
       </article>
 
       <article className="Hero__Container__Differentials">
-        <ul >
-          <li className='itens'>
-            <img src="images/seta.svg" alt="Ícone de seta indicando diferencial sobre eventos personalizados" />
-            <p><strong>Eventos Personalizados</strong> – Bodas, noivados, jantares e almoços familiares.</p>
+        <h3 id="hero-section">O que nos torna únicos?</h3>
+        <ul>
+          <li className="itens">
+            <img 
+              src="images/seta.svg" 
+              alt="Ícone de seta indicando diferencial sobre gastronomia afetiva" 
+              loading="lazy" 
+            />
+            <p><strong className="highlight">Culinária Afetiva</strong> – Pratos que resgatam memórias e traduzem emoções através do sabor. Cada refeição é uma história, cada ingrediente é um toque de carinho.</p>
           </li>
-          <li className='itens'>
-            <img src="images/seta.svg" alt="Ícone de seta indicando diferencial sobre gastronomia refinada" />
-            <p><strong>Gastronomia Refinada</strong> – Pratos preparados com ingredientes selecionados de alta qualidade.</p>
+          <li className="itens">
+            <img 
+              src="images/seta.svg" 
+              alt="Ícone de seta indicando diferencial sobre eventos personalizados" 
+              loading="lazy" 
+            />
+            <p><strong>Eventos Personalizados</strong> – Criamos menus exclusivos para noivados, bodas, jantares e almoços familiares.</p>
           </li>
-          <li className='itens'>
-            <img src="images/seta.svg" alt="Ícone de seta indicando diferencial sobre atendimento premium" />
-            <p><strong>Atendimento Premium</strong> – Equipe treinada em etiqueta e primeiros socorros.</p>
+          <li className="itens">
+            <img 
+              src="images/seta.svg" 
+              alt="Ícone de seta indicando diferencial sobre ingredientes selecionados" 
+              loading="lazy" 
+            />
+            <p><strong>Ingredientes Selecionados</strong> – Utilizamos produtos de alta qualidade para oferecer uma experiência sofisticada.</p>
           </li>
-          <li className='itens'>
-            <img src="images/seta.svg" alt="Ícone de seta indicando diferencial sobre serviço completo" />
-            <p><strong>Serviço Completo</strong> – Do convite ao manobrista, incluindo translado para convidados com mobilidade reduzida.</p>
+          <li className="itens">
+            <img 
+              src="images/seta.svg" 
+              alt="Ícone de seta indicando diferencial sobre atendimento premium" 
+              loading="lazy" 
+            />
+            <p><strong>Atendimento Premium</strong> – Equipe altamente capacitada, garantindo excelência e atenção a cada detalhe.</p>
           </li>
         </ul>
       </article>
-      <div className='Hero__Container__B'>
-      <Link href="/form" prefetch={false}>
-        <button aria-label="Solicite um orçamento"> Solicite um Orçamento</button>
-      </Link>
+
+      <div className="Hero__Container__B">
+        <Link href="/form" prefetch={false}>
+          <button aria-label="Solicitar orçamento e criar evento personalizado">Vamos criar juntos seu evento?</button>
+        </Link>
       </div>
     </section>
   );

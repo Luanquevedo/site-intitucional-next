@@ -1,6 +1,5 @@
 @use '../../styles/variables' as *;
 
-
 .Mensage {
   display: flex;
   flex-direction: column;
@@ -24,20 +23,35 @@
     flex-direction: column;
     gap: 1.5rem;
 
-    input {
-      background-color: #B1C2D4;
-      border: none;
-      border-radius: 10px;
-      height: 2.2rem;
-      box-shadow: 0px 4px 4px 0px #00000050;
-    }
-
+    input,
+    select, // Adicionado para o select
     textarea {
       background-color: #B1C2D4;
       border: none;
+      font-family: $secondaryfont;
+      font-weight: $font-medium;
+      padding: 0.5rem;
+      height: 2rem;
       border-radius: 10px;
-      height: 6rem;
       box-shadow: 0px 4px 4px 0px #00000050;
+    }
+
+    select {
+      height: 2.3rem;
+      padding-left: 0.5rem;
+      font-size: 1rem;
+      color: $fontcolor;
+      font-family: $secondaryfont;
+    }
+
+    option {
+      background-color: #B1C2D4;
+      color: $fontcolor;
+      font-family: $secondaryfont;
+    }
+
+    textarea {
+      height: 6rem;
     }
 
     label {
@@ -46,6 +60,13 @@
       font-family: $secondaryfont;
     }
   }
+}
+
+.Mensage__Form__itens {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  width: 21rem;
 }
 
 .bt {
@@ -68,13 +89,6 @@
     transform: scaleX(7rem);
     transition: 0.5s ease;
   }
-}
-
-.Mensage__Form__itens {
-  display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
-  width: 21rem;
 }
 
 @media (min-width: 769px) {
@@ -117,8 +131,5 @@
     gap: 0.3rem;
     width: 41rem;
   }
-
-  footer {
-    margin-bottom: -200px;
-  }
 }
+

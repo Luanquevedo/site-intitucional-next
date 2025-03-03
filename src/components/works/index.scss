@@ -40,16 +40,17 @@
             margin-bottom: 3rem;
 
             img {
-                width: 10rem;
+                width: 9rem;
             }
 
             ul {
+                align-items: center;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
                 text-align: center;
                 list-style: none;
-                gap: 2rem;
+                gap: 1rem;
 
                 p {
                     max-width: 10rem;

@@ -3,7 +3,7 @@ import Head from 'next/head';
 
 const AboutBanner = () => {
   return (
-    <section className='About'>
+    <section className="About">
       <Head>
         <title>Sobre Nós - Tempero da Grazzy</title>
         <meta
@@ -16,19 +16,23 @@ const AboutBanner = () => {
         />
       </Head>
 
-      <header className='About__None'>
-        <hs>Sobre Nós</hs>
+      {/* Header principal da seção */}
+      <header className="About__None">
+        <h1>Sobre Nós</h1>
       </header>
-      <div className='About__Container'>
+
+      <div className="About__Container">
+        {/* Artigo 1: Nossa História */}
         <article>
           <header>
             <h2>Nossa História</h2>
           </header>
           <p>
-            No <strong>Tempero da Grazzy</strong>, acreditamos que cada evento conta uma história única. Nossa trajetória começou com a paixão pela gastronomia e pela arte de receber bem.  Ao longo dos anos, aprimoramos nossos serviços para oferecer um <strong>buffet sofisticado e personalizado</strong>, refletindo o gosto e as preferências de cada cliente.
+            No <strong>Tempero da Grazzy</strong>, acreditamos que cada evento conta uma história única. Nossa trajetória começou com a paixão pela gastronomia e pela arte de receber bem. Ao longo dos anos, aprimoramos nossos serviços para oferecer um <strong>buffet sofisticado e personalizado</strong>, refletindo o gosto e as preferências de cada cliente.
           </p>
         </article>
 
+        {/* Artigo 2: Filosofia e compromisso */}
         <article>
           <p>
             Nosso objetivo é proporcionar um serviço impecável, com atenção a cada detalhe, garantindo que seu evento seja exatamente como sonhou. Prezamos pela <strong>qualidade dos ingredientes</strong>, pela <strong>elegância na apresentação</strong> e pela <strong>excelência no atendimento</strong>.

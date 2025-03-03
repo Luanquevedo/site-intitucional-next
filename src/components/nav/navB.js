@@ -17,6 +17,13 @@ const NavB = () => {
     }
   };
 
+  // Função para fechar o menu ao clicar em um link
+  const closeMenu = () => {
+    if (isActive) {
+      setIsActive(false);
+    }
+  };
+
   return (
     <div className="Header">
       <header>
@@ -31,7 +38,7 @@ const NavB = () => {
               priority
             />
           </Link>
-          
+
           {/* Botão hamburguer */}
           <button
             className="hamburguer"
@@ -44,13 +51,31 @@ const NavB = () => {
 
           {/* Menu de navegação */}
           <ul id="menu" className="nav-list" aria-hidden={!isActive}>
-            <li><Link href="/" aria-label="Ir para a página inicial">Home</Link></li>
-            <li><Link href="/#about" aria-label="Saber mais sobre nós">Sobre nós</Link></li>
-            <li><Link href="/#services" aria-label="Ver serviços oferecidos">Serviços</Link></li>
-            <li><Link href="/#atendimento" aria-label="Ver área de atendimento">Área de atendimento</Link></li>
+            <li>
+              <Link href="/#home" aria-label="Ir para a página inicial" onClick={closeMenu}>
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link href="/#about" aria-label="Saber mais sobre nós" onClick={closeMenu}>
+                Sobre nós
+              </Link>
+            </li>
+            <li>
+              <Link href="/#services" aria-label="Ver serviços oferecidos" onClick={closeMenu}>
+                Serviços
+              </Link>
+            </li>
+            <li>
+              <Link href="/#atendimento" aria-label="Ver área de atendimento" onClick={closeMenu}>
+                Área de atendimento
+              </Link>
+            </li>
             <div className="navbar__Form">
               <Link href="/form" prefetch={false} aria-label="Solicitar um orçamento">
-                <button aria-label="Faça seu orçamento agora">Faça seu orçamento aqui</button>
+                <button aria-label="Faça seu orçamento agora" onClick={closeMenu}>
+                  Faça seu orçamento aqui
+                </button>
               </Link>
             </div>
           </ul>
