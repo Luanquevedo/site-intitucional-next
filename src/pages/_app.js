@@ -9,13 +9,13 @@ import '../components/hero/index.scss'
 import '../components/nav/index.scss'
 import '../components/mensage/index.scss'
 
-import Navbar from '../components/nav/navbar'
+import NavB from '../components/nav/navB'
 import Footer from '../components/footer/footer'
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <Navbar /> {/* Adicionando o Navbar */}
+      <NavB /> {/* Adicionando o Navbar */}
       <main>
         <Component {...pageProps} /> {/* O conteúdo principal da página */}
       </main>

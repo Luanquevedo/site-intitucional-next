@@ -5,9 +5,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 2REM;
   gap: 2rem;
   color: $fontcolor;
+  padding-top: 5rem; // Adiciona o espaçamento de 3rem no topo sem afetar o nav
 
   h2 {
     text-align: center;
@@ -75,4 +75,50 @@
   flex-direction: column;
   gap: 0.3rem;
   width: 21rem;
+}
+
+@media (min-width: 769px) {
+  .Mensage {
+    h2 {
+      font-size: 2rem;
+      width: 43rem;
+    }
+
+    form {
+      gap: 1.5rem;
+    }
+  }
+
+  .bt {
+    margin: auto;
+    margin-top: 3.7rem;
+    margin-bottom: 3.7rem;
+    width: 30rem;
+    height: 5rem;
+    font-size: 1rem;
+    background-color: transparent;
+    color: $bta;
+    border: 3px solid $bta;
+    font-weight: $font-semibold;
+    border-radius: 1rem;
+    padding: 10px;
+
+    &:hover {
+      color: $tertiaryfonttcolor;
+      background-color: $bta;
+      transform: scaleX(7rem);
+      transition: 0.5s ease;
+    }
+  }
+
+  .Mensage__Form__itens {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    width: 41rem;
+  }
+
+  footer {
+    margin-bottom: -200px;
+  }
 }

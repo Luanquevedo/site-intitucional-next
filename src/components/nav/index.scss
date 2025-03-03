@@ -1,162 +1,178 @@
 @use '../../styles/variables' as *;
 
-.navbar {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  height: 6.5rem;
-  background-color: $backgroudcolor;
-  position: relative;
-  border-bottom: none;
-  margin: 0;
+.Header {
+    margin: 0;
+    padding: 0;
+    background-color: $backgroudcolor;
+    font-family: $font-semibold;
+    height: 3vw;
+    position: fixed;
+    z-index: 1000;
+    width: 100vw;
 
-  &__Itens {
-    margin-right: 1rem;
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-  }
-}
+    header {
+        background-color: $backgroudcolor;
+        padding-inline: 3vw;
 
-/* Estilização dos links */
-.navbar__Itens__Link {
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
-  font-size: 1rem;
-  color: white;
-  padding: 10px;
-  transition: color 0.3s ease;
-}
+        nav {
+            height: 5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $backgroudcolor;
 
-.navbar__Itens__Link:hover {
-  color: $yellow;
-}
+            .logo {
+                width: 16vw;
+            }
 
-/* Estilo para o link ativo */
-.navbar__Itens__Link.active {
-  color: $yellow;  /* Destaca o link ativo */
-  font-weight: bold;  /* Pode adicionar mais estilos, como negrito */
-}
+            .hamburguer {
+                display: none; // Oculta o botão em telas maiores
+                border: none;
+                background: none;
+                border-top: 3px solid $tertiaryfonttcolor;
+                cursor: pointer;
+                z-index: 2;
 
-/* Estilização do botão de orçamento */
-.navbar__Form button {
-  background-color: transparent;
-  border: 2px solid $yellow;
-  color: $tertiaryfonttcolor;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
+                &::before,
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 30px;
+                    height: 3px;
+                    background: $tertiaryfonttcolor;
+                    margin-top: 5px;
+                    transition: 0.3s;
+                }
+            }
 
-.navbar__Form button:hover {
-  background-color: $yellow;
-  color: $fontcolor;
-}
+            .nav-list {
+                margin-top: 1.5rem;
+                display: flex;
+                gap: 24px;
+                list-style: none;
 
-/* Estilos do menu mobile */
-.bm-burger-button {
-  position: absolute;
-  width: 2.1rem;
-  height: 1.4rem;
-  left: 20px;
-  top: 2rem;
-  z-index: 15; /* Garante que o botão fique sobre o menu */
-}
+                li {
+                    a {
+                        font-size: 1rem;
+                        color: $tertiaryfonttcolor;
+                        text-decoration: none;
+                        opacity: 1;
+                        transition: opacity 0.5s ease;
+                    }
+                }
+            }
 
-.bm-burger-bars {
-  background: $tertiaryfonttcolor;
-  transition: none; /* Remove transições de animação no botão */
-}
+            .navbar__Form {
+                text-align: center;
+                margin-top: -0.5rem;
 
-/* Estilos do menu suspenso (menu hamburguer) */
-.bm-menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh; /* Assegura que a altura ocupe 100% da tela */
-  background: $backgroudcolor;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 0; /* Remove o padding, caso haja algum espaço extra */
-  z-index: 20; /* Garante que o menu esteja por cima da navbar */
-  transition: none; /* Remove a transição para a animação não afetar a posição */
-}
-.bm-menu-wrap {
-  margin: 0; /* Remove margens que possam criar espaços extras */
-  padding: 0; /* Remover padding extra */
-}
+                button {
 
-/* Evitar rolagem do fundo quando o menu estiver aberto */
-body.menu-open {
-  overflow: hidden; /* Garante que o conteúdo da página não se mova */
-}
+                    background-color: transparent;
+                    border: 2px solid $yellow;
+                    color: $tertiaryfonttcolor;
+                    padding: 0.5rem 1rem;
+                    cursor: pointer;
+                    border-radius: 5px;
+                    transition: background-color 0.3s ease;
 
-/* Centralizar o logo dentro do menu */
-.bm-menu .navbar__Logo {
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-/* Estilo do botão de fechar no menu mobile */
-.menu__close-btn {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  background: transparent;
-  border: none;
-  color: white;
-  font-size: 1.5rem;
-  font-weight: bold;
-  cursor: pointer;
-  z-index: 25; /* Garante que o botão de fechar esteja sobre o menu */
-  transition: none; /* Remove qualquer transição de animação no botão */
-}
-
-.menu__close-btn:hover {
-  color: #ffb800;
-}
-
-/* Responsividade para telas pequenas */
-@media (max-width: 768px) {
-  .navbar {
-    height: 5rem;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-    justify-content: center;
-
-    &__Form {
-      margin-top: 1rem;
+                    &:hover {
+                        background-color: $yellow;
+                        color: $fontcolor;
+                    }
+                }
+            }
+        }
     }
-  }
+}
 
-  Footer {
-    margin-top: 7rem;
-  }
+// Responsividade para mobile
+@media (max-width: 820px) {
+    .Header {
+        height: 85px !important;
 
-  .navbar__Itens {
-    display: none; // Esconde os itens da navbar no mobile
-    margin-top: 14rem;
-    margin-left: 5vh;
-    margin-right: 5vh;
+        .nav {
+            .logo {
+                width: 150px;
+            }
 
-    &__Link {
-      margin-top: 1.5rem;
+            .hamburguer {
+                display: block; // Agora o botão aparece apenas no mobile
+                position: relative;
+
+                &::after,
+                &::before {
+                    margin-top: 5px;
+                    position: relative;
+                }
+            }
+
+            .nav-list {
+                margin-top: 0;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background-color: $backgroudcolor;
+                clip-path: circle(100px at 90% -15%);
+                transition: clip-path 1s ease-out;
+                pointer-events: none;
+                gap: 3rem;
+
+                li {
+                    a {
+                        font-size: 1.2rem;
+                        text-align: center;
+                        display: block;
+                        padding: 10px;
+                        margin-right: 6rem;
+                    }
+                }
+            }
+
+            &.active {
+                .nav-list {
+                    clip-path: circle(1500px at 90% -15%);
+                    pointer-events: auto;
+                }
+
+                .hamburguer {
+                    position: fixed;
+                    top: 26px;
+                    right: 16px;
+                    border-top-color: transparent;
+
+                    &::before {
+                        transform: rotate(135deg);
+                    }
+
+                    &::after {
+                        transform: rotate(-135deg);
+                        top: -7px;
+                    }
+                }
+            }
+
+            &:not(.active) .nav-list a {
+                transition: opacity 0.3s ease 0.5s;
+                opacity: 1;
+            }
+        }
     }
-  }
 
-  .navbar__Logo {
-    display: block;
-  }
-  .navbar__Form button {
-    margin-left: 5vh;
-    margin-right: 5vh;
-  }
+    .navbar__Form {
+        margin-top: 0;
+
+        button {
+            border: 2px solid $yellow;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            margin-right: 6rem;
+        }
+    }
 }

@@ -1,4 +1,3 @@
-import Navbar from "@/components/nav/navbar";
 import HeroBanner from "@/components/hero/banner";
 import HeroContainer from "@/components/hero/container";
 import AboutBanner from "@/components/aboutus/banner";
