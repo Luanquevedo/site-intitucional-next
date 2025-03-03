@@ -5,11 +5,11 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 const card = [
-  { id: 1, image: '/images/c1.png', alt: 'Imagem 1: Exemplo de serviço de buffet elegante em evento' },
-  { id: 2, image: '/images/c2.png', alt: 'Imagem 2: Decoração sofisticada para eventos especiais' },
-  { id: 3, image: '/images/c3.png', alt: 'Imagem 3: Apresentação de pratos gourmet em buffet' },
-  { id: 4, image: '/images/c4.png', alt: 'Imagem 4: Serviço de catering para eventos corporativos' },
-  { id: 5, image: '/images/c5.png', alt: 'Imagem 5: Buffet personalizado com decoração temática' },
+  { id: 1, image: '/images/c1.png', alt: 'Imagem 1: Exemplo de prato servido' },
+  { id: 2, image: '/images/c2.png', alt: 'Imagem 2: Exemplo de prato servido' },
+  { id: 3, image: '/images/c3.png', alt: 'Imagem 3: Exemplo de prato servido' },
+  { id: 4, image: '/images/c4.png', alt: 'Imagem 4: Exemplo de prato servido' },
+  { id: 5, image: '/images/c5.png', alt: 'Imagem 5: Exemplo de prato servido' },
 ];
 
 // Memoize para evitar renderizações desnecessárias
