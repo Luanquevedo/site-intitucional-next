@@ -5,14 +5,14 @@ const AboutBanner = () => {
   return (
     <section className="About">
       <Head>
-        <title>Sobre Nós - Tempero da Grazzy</title>
+        <title>Sobre Nós - Cuka Eventos</title>
         <meta
           name="description"
-          content="Conheça a história e o compromisso do Tempero da Grazzy, oferecendo buffet sofisticado e personalizado para eventos especiais."
+          content="Conheça a história e o compromisso do Cuka Eventos, oferecendo buffet sofisticado e personalizado para eventos especiais."
         />
         <meta
           name="keywords"
-          content="Tempero da Grazzy, buffet sofisticado, evento personalizado, gastronomia, serviços de buffet"
+          content="Cuka Eventos, buffet sofisticado, evento personalizado, gastronomia, serviços de buffet"
         />
       </Head>
 
@@ -28,7 +28,7 @@ const AboutBanner = () => {
             <h2>Nossa História</h2>
           </header>
           <p>
-            No <strong>Tempero da Grazzy</strong>, acreditamos que cada evento conta uma história única. Nossa trajetória começou com a paixão pela gastronomia e pela arte de receber bem. Ao longo dos anos, aprimoramos nossos serviços para oferecer um <strong>buffet sofisticado e personalizado</strong>, refletindo o gosto e as preferências de cada cliente.
+            No <strong>Cuka Eventos</strong>, acreditamos que cada evento conta uma história única. Nossa trajetória começou com a paixão pela gastronomia e pela arte de receber bem. Ao longo dos anos, aprimoramos nossos serviços para oferecer um <strong>buffet sofisticado e personalizado</strong>, refletindo o gosto e as preferências de cada cliente.
           </p>
         </article>
 

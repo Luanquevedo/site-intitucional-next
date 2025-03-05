@@ -8,19 +8,19 @@ export default function Form() {
   return (
     <div>
       <Head>
-        <meta name="description" content="Entre em contato com o Tempero da Grazzy e solicite um orçamento personalizado para o seu evento." />
-        <meta name="keywords" content="formulário, orçamento, contato, Tempero da Grazzy, eventos, buffet, noivados, bodas, jantares" />
-        <meta name="author" content="Tempero da Grazzy" />
+        <meta name="description" content="Entre em contato com o Cuka Eventos e solicite um orçamento personalizado para o seu evento." />
+        <meta name="keywords" content="formulário, orçamento, contato, Cuka Eventos, eventos, buffet, noivados, bodas, jantares" />
+        <meta name="author" content="Cuka Eventos" />
         <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="Entre em Contato - Tempero da Grazzy" />
+        <meta property="og:title" content="Entre em Contato - Cuka Eventos" />
         <meta property="og:description" content="Preencha o formulário e solicite seu orçamento para um buffet personalizado e exclusivo para o seu evento." />
         <meta property="og:image" content="/images/og-image.jpg" />
-        <meta property="og:url" content="https://www.temperodagrazzy.com.br/contato" />
+        <meta property="og:url" content="https://www.cukaeventos.com.br/contato" />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Tempero da Grazzy" />
+        <meta property="og:site_name" content="Cuka Eventos" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Entre em Contato - Tempero da Grazzy" />
-        <meta name="twitter:description" content="Solicite um orçamento para o seu evento personalizado com o Tempero da Grazzy." />
+        <meta name="twitter:title" content="Entre em Contato - Cuka Eventos" />
+        <meta name="twitter:description" content="Solicite um orçamento para o seu evento personalizado com o Cuka Eventos." />
         <meta name="twitter:image" content="/images/og-image.jpg" />
       </Head>
 

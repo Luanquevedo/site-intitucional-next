@@ -64,7 +64,7 @@ const Footer = () => {
 
       {/* Copyright */}
       <div className="Footer__Cop">
-        <p>Copyright © {new Date().getFullYear()} Tempero da Grazzy. Todos os direitos reservados.</p>
+        <p>Copyright © {new Date().getFullYear()} Cuka Eventos. Todos os direitos reservados.</p>
       </div>
     </footer>
   );

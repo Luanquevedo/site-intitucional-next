@@ -13,10 +13,10 @@ const AboutContainer = () => {
   return (
     <section>
       <Head>
-        <title>Diferenciais - Tempero da Grazzy</title>
+        <title>Diferenciais - Cuka Eventos</title>
         <meta
           name="description"
-          content="Conheça os diferenciais do Tempero da Grazzy, oferecendo personalização, ingredientes selecionados e atendimento exclusivo em cada evento."
+          content="Conheça os diferenciais do Cuka Eventos, oferecendo personalização, ingredientes selecionados e atendimento exclusivo em cada evento."
         />
         <meta
           name="keywords"
