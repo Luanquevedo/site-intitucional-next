@@ -102,12 +102,16 @@
 // Responsividade para mobile
 @media (max-width: 820px) {
   .Header {
-    height: 95px !important;
+    height: 85px !important;
 
     .nav {
       display: flex;
+      height: 6.5rem;
+      max-width: 98vw;
+      justify-content: space-between;
       .logo img {
-        height: 110px; // Ajuste específico para mobile
+        margin-left: -2rem;
+        height: 100px; // Ajuste específico para mobile
         max-width: 180px;
       }
 
