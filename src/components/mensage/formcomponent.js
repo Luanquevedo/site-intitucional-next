@@ -16,14 +16,14 @@ const FormContato = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const { nome, email, telefone, tipoEvento, dadosDesejados, mensagem } = formData;
+    const { nome, email, telefone, tipoEvento, informacoesDesejados, mensagem } = formData;
 
     const message = `Olá, gostaria de solicitar um orçamento!
       Nome: ${nome}
       E-mail: ${email}
       Telefone: ${telefone}
       Tipo de Evento: ${tipoEvento}
-      Informações Desejadas: ${dadosDesejados}
+      Informaçoes Desejadas: ${informacoesDesejados}
       Mensagem: ${mensagem}
     `;
 
@@ -47,7 +47,7 @@ const FormContato = () => {
     <section className="Mensage" aria-labelledby="form-title">
       <h2 id="form-title">Preencha seus dados e solicite um orçamento</h2>
       <form onSubmit={handleSubmit} aria-describedby="form-description">
-        
+
         <div className="Mensage__Form__itens">
           <label htmlFor="nome">Nome Completo</label>
           <input
@@ -61,7 +61,7 @@ const FormContato = () => {
             aria-label="Nome completo"
           />
         </div>
-        
+
         <div className="Mensage__Form__itens">
           <label htmlFor="email">E-mail</label>
           <input
@@ -110,12 +110,12 @@ const FormContato = () => {
         </div>
 
         <div className="Mensage__Form__itens">
-          <label htmlFor="informacoesDesejadas">Informações Desejadas</label>
+          <label htmlFor="dadosDesejados">Informações Desejadas</label>
           <input
             type="text"
-            id="informacoesDesejadas"
-            name="informacoesDesejadas"
-            value={formData.dadosDesejados}
+            id="dadosDesejados"
+            name="dadosDesejados" // Alterado para "dadosDesejados"
+            value={formData.informacoesDesejados}
             onChange={handleChange}
             placeholder="O que deseja em seu evento?"
             aria-label="Informações desejadas"
