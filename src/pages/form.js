@@ -14,14 +14,14 @@ export default function Form() {
         <meta name="robots" content="index, follow" />
         <meta property="og:title" content="Entre em Contato - Cuka Eventos" />
         <meta property="og:description" content="Preencha o formulário e solicite seu orçamento para um buffet personalizado e exclusivo para o seu evento." />
-        <meta property="og:image" content="/images/og-image.jpg" />
+        <meta property="og:image" content="/images/og-cuka.png" />
         <meta property="og:url" content="https://www.cukaeventos.com.br/contato" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Cuka Eventos" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Entre em Contato - Cuka Eventos" />
         <meta name="twitter:description" content="Solicite um orçamento para o seu evento personalizado com o Cuka Eventos." />
-        <meta name="twitter:image" content="/images/og-image.jpg" />
+        <meta name="twitter:image" content="/images/og-cuka.png" />
       </Head>
 
       <section id="contact">

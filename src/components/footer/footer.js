@@ -58,6 +58,15 @@ const Footer = () => {
           >
             <Image src="/images/ig.svg" alt="Instagram" width={24} height={24} />
           </Link>
+
+          <Link
+            href="https://www.tiktok.com/@cukaeventos.oficial?_t=ZM-8uRJrUAZlBO&_r=1"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Siga-nos no TikTok"
+          >
+            <Image src="/images/tk.svg" alt="TikTok" width={24} height={24} />
+          </Link>
         </div>
 
       </div>
