@@ -10,7 +10,7 @@ export default function Document() {
           rel="stylesheet"
         />
         {/* 🔹 Favicon */}
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="/favicon.ico" />
         
         {/* 🔹 Meta tags para SEO */}
         <meta name="description" content="No Cuka Eventos, oferecemos um serviço de buffet personalizado e completo para eventos especiais, como bodas, noivados e jantares familiares." />
