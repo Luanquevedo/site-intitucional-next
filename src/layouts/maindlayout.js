@@ -20,7 +20,7 @@ export default function MainLayout({ children }) {
                 <meta name="twitter:image" content="/images/og-image.jpg" />
                 <meta name="twitter:site" content="@cukaeventos" /> {/* Supondo que tenha uma conta no Twitter */}
                 <meta name="robots" content="index, follow" /> {/* Instruções para os motores de busca */}
-                <link rel="icon" href="/favicon.png" />
+                <link rel="icon" href="/favicon.ico" />
                 <link rel="stylesheet" href="/styles/main.css" /> {/* Adicionando uma folha de estilos personalizada */}
                 <link rel="canonical" href="https://www.cukaeventos.com.br" /> {/* URL canônica para SEO */}
             </Head>

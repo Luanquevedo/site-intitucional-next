@@ -28,12 +28,12 @@ const FormContato = () => {
     `;
 
     // 🔹 Envio para WhatsApp
-    const phoneNumber = "5511963080656"; // Seu número com DDD e código do Brasil
+    const phoneNumber = "5511939559833"; // Seu número com DDD e código do Brasil
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappURL, "_blank");
 
     // 🔹 Envio para E-mail
-    const emailDestino = "temperodagrazii@gmail.com";
+    const emailDestino = "eventoscukacomercial@gmail.com";
     const emailSubject = encodeURIComponent("Solicitação de Contato - Evento");
     const emailBody = encodeURIComponent(message);
     const mailtoLink = `mailto:${emailDestino}?subject=${emailSubject}&body=${emailBody}`;

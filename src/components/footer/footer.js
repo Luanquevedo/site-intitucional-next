@@ -10,30 +10,30 @@ const Footer = () => {
         {/* Contatos */}
         <div className="Footer__Container__Itens">
           <Link
-            href="https://wa.me/5511963080656"
+            href="https://wa.me/5511939559833"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Entre em contato pelo WhatsApp"
             className="Footer__Container__Itens__Dados"
           >
             <Image src="/images/wpp.svg" alt="WhatsApp" width={24} height={24} />
-            <p>+55 11 96308-0656</p>
+            <p>+55 11 93955-9833</p>
           </Link>
 
           <Link
-            href="mailto:temperodagrazii@gmail.com"
-            aria-label="Envie um email para Tempero da Grazzy"
+            href="mailto:eventoscukacomercial@gmail.com"
+            aria-label="Envie um email para Cuka Eventos"
             className="Footer__Container__Itens__Dados"
           >
             <Image src="/images/email.svg" alt="Email" width={24} height={24} />
-            <p>temperodagrazii@gmail.com</p>
+            <p>eventoscukacomercial@gmail.com</p>
           </Link>
         </div>
 
         {/* Redes Sociais */}
         <div className="Footer__Container__Redes">
           <Link
-            href="https://www.youtube.com"
+            href="https://www.youtube.com/@temperodagrazzy"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Assista ao nosso canal no YouTube"
@@ -51,7 +51,7 @@ const Footer = () => {
           </Link>
 
           <Link
-            href="https://www.instagram.com/temperodagrazzi?igsh=M21wYTM1MmFxZHd1"
+            href="https://www.instagram.com/cukaeventos.oficial?igsh=MWZ2cm81ZnM0OGF1OA=="
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Siga-nos no Instagram"
