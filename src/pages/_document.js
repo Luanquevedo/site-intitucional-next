@@ -17,13 +17,13 @@ export default function Document() {
         <meta name="keywords" content="buffet personalizado, eventos, noivados, bodas, jantares, almoços familiares, serviço completo, eventos especiais" />
         <meta property="og:title" content="Cuka Eventos - Buffet Personalizado para Seu Evento" />
         <meta property="og:description" content="Proporcione um evento memorável com nosso serviço de buffet completo e personalizado. Garantimos sofisticação, qualidade e um atendimento premium." />
-        <meta property="og:image" content="/images/og-image.jpg" />
+        <meta property="og:image" content="/images/og-cuka.png" />
         <meta property="og:url" content="https://www.cukaeventos.com.br" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Cuka Eventos - Buffet Personalizado e Eventos" />
         <meta name="twitter:description" content="Proporcione um evento memorável com nosso serviço de buffet completo e personalizado. Garantimos sofisticação, qualidade e um atendimento premium." />
-        <meta name="twitter:image" content="/images/og-image.jpg" />
+        <meta name="twitter:image" content="/images/og-cuka.png" />
         
         {/* 🔹 Pré-carregamento das fontes */}
         <link rel="preload" href="https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&family=Enriqueta:wght@400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" as="font" type="font/woff2" crossorigin="anonymous" />

@@ -31,14 +31,14 @@ export default function Home() {
         <meta name="robots" content="index, follow" />
         <meta property="og:title" content="Cuka Eventos - Buffet Personalizado e Exclusivo para Eventos" />
         <meta property="og:description" content="Proporcione uma experiência única em seu evento com o Cuka Eventos. Buffet personalizado com ingredientes selecionados e atendimento de excelência." />
-        <meta property="og:image" content="/images/og-image.jpg" />
+        <meta property="og:image" content="/images/og-cuka.png" />
         <meta property="og:url" content="https://www.cukaeventos.com.br" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Cuka Eventos" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Cuka Eventos - Buffet Personalizado e Exclusivo para Eventos" />
         <meta name="twitter:description" content="Oferecemos um buffet com a melhor qualidade, ideal para eventos inesquecíveis." />
-        <meta name="twitter:image" content="/images/og-image.jpg" />
+        <meta name="twitter:image" content="/images/og-cuka.png" />
       </Head>
       <section id="home">
         <HeroBanner />
