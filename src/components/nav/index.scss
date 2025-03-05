@@ -15,7 +15,7 @@
     padding-inline: 3vw;
 
     nav {
-      height: 5rem;
+      height: 7.1rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -23,10 +23,15 @@
       width: 100%;  // Garantir que ocupe toda a largura da tela
 
       .logo {
-        width: 16vw;
-        flex-grow: 1;  // Isso faz o logo crescer e ocupar o espaço disponível
         display: flex;
-        justify-content: center;  // Centraliza o logo
+        justify-content: center; // Centraliza o logo
+        align-items: center;
+      
+        img {
+          width: auto; // Permite que a largura seja ajustada dinamicamente
+          height: 8vw; // Define um tamanho responsivo
+          max-width: 200px; // Evita que fique muito grande
+        }
       }
 
       .hamburguer {
@@ -97,12 +102,14 @@
 // Responsividade para mobile
 @media (max-width: 820px) {
   .Header {
-    height: 85px !important;
+    height: 100px !important;
 
     .nav {
-      .logo {
-        width: 150px;
-        flex-grow: 1;  // Garante que o logo ocupe o espaço e centraliza
+      display: flex;
+      .logo img {
+        height: 120px; // Ajuste específico para mobile
+        max-width: 180px;
+        margin-top: 1rem;
       }
 
       .hamburguer {

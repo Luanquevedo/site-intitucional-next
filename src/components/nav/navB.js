@@ -17,7 +17,6 @@ const NavB = () => {
     }
   };
 
-  // Função para fechar o menu ao clicar em um link
   const closeMenu = () => {
     if (isActive) {
       setIsActive(false);
@@ -28,15 +27,18 @@ const NavB = () => {
     <div className="Header">
       <header>
         <nav className={`nav ${isActive ? 'active' : ''}`} role="navigation" aria-label="Menu principal">
+          
+          {/* Logo dentro de um div para aplicar estilos corretamente */}
           <Link href="/" aria-label="Página inicial">
-            <Image
-              className="logo"
-              src="/logo.svg"
-              alt="Logo da empresa"
-              width={100}
-              height={50}
-              priority
-            />
+            <div className="logo">
+              <Image
+                src="/logo.svg"
+                alt="Logo da empresa"
+                width={150}  // Ajuste da largura
+                height={80}  // Ajuste da altura
+                priority
+              />
+            </div>
           </Link>
 
           {/* Botão hamburguer */}
