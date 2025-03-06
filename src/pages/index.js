@@ -43,6 +43,7 @@ export default function Home() {
       <section id="home">
         <HeroBanner />
         <HeroContainer />
+        <CardCarrousel />
       </section>
       <section id="about">
         <AboutBanner />
@@ -51,7 +52,6 @@ export default function Home() {
       <section id="services">
         <Work />
         <WorkContainer />
-        <CardCarrousel />
       </section>
       <section id="atendimento">
         <Contact />
