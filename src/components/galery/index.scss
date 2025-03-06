@@ -5,7 +5,7 @@
     flex-direction: column;
     margin: auto;
     gap: 2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
     
     &__container {
         width: 100%;
@@ -42,8 +42,7 @@
 
         h2 {
             font-size: 1.2rem;
-            
-            margin-left: 2.2; // Remover a margem esquerda em telas menores
+            margin-left: 2.3rem; // Remover a margem esquerda em telas menores
         }
     }
 }

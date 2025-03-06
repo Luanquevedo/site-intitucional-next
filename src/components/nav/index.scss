@@ -134,6 +134,7 @@
         width: 100vw;
         height: 100vh;
         display: flex;
+        padding: 0;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -149,7 +150,6 @@
             text-align: center;
             display: block;
             padding: 10px;
-            margin-right: 5rem;
           }
         }
       }
@@ -191,7 +191,6 @@
       border: 2px solid $yellow;
       padding: 0.5rem 1rem;
       border-radius: 5px;
-      margin-right: 5rem;
     }
   }
 }

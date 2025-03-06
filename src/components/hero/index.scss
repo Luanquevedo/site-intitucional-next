@@ -79,22 +79,24 @@
   }
 
   img {
-    width: 2rem;
-    margin-top: -2rem;
+    width: 1.5rem;
   }
 
   ul {
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    padding: 0 ;
+    justify-content: center;
   }
 }
 
 .itens {
+  margin: auto;
   display: flex;
   align-items: center;
   gap: 1rem;
-  text-align: justify;
+  text-align: left;
 }
 
 
@@ -144,7 +146,7 @@
 
     img {
       width: 2rem;
-      margin-top: 0rem;
+      margin-left: 2rem;
     }
 
     ul {
