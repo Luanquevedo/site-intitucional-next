@@ -49,7 +49,7 @@ const FormContato = () => {
       <form onSubmit={handleSubmit} aria-describedby="form-description">
 
         <div className="Mensage__Form__itens">
-          <label htmlFor="nome">Nome Completo</label>
+          <label htmlFor="nome">Nome Completo*</label>
           <input
             type="text"
             id="nome"
@@ -63,7 +63,7 @@ const FormContato = () => {
         </div>
 
         <div className="Mensage__Form__itens">
-          <label htmlFor="email">E-mail</label>
+          <label htmlFor="email">E-mail*</label>
           <input
             type="email"
             id="email"
@@ -77,7 +77,7 @@ const FormContato = () => {
         </div>
 
         <div className="Mensage__Form__itens">
-          <label htmlFor="telefone">Telefone</label>
+          <label htmlFor="telefone">Telefone*</label>
           <input
             type="tel"
             id="telefone"
@@ -91,7 +91,7 @@ const FormContato = () => {
         </div>
 
         <div className="Mensage__Form__itens">
-          <label htmlFor="tipoEvento">Tipo de Evento</label>
+          <label htmlFor="tipoEvento">Tipo de Evento*</label>
           <select
             id="tipoEvento"
             name="tipoEvento"
@@ -123,7 +123,7 @@ const FormContato = () => {
         </div>
 
         <div className="Mensage__Form__itens">
-          <label htmlFor="mensagem">Mensagem</label>
+          <label htmlFor="mensagem">Mensagem*</label>
           <textarea
             id="mensagem"
             name="mensagem"
@@ -132,6 +132,7 @@ const FormContato = () => {
             rows="4"
             placeholder="Deixe sua mensagem ou dúvida aqui"
             aria-label="Mensagem adicional"
+            required
           ></textarea>
         </div>
 

@@ -21,8 +21,8 @@ const CardCarrousel = memo(() => {
         className="card__carousel__container"
         slidesPerView={4}
         spaceBetween={20}
-        autoplay={{ delay: 2000, disableOnInteraction: false }}
-        speed={5000}
+        autoplay={{ delay: 3000, disableOnInteraction: false }}
+        speed={1500}
         loop={true}
         modules={[Pagination, Autoplay]}
         breakpoints={{

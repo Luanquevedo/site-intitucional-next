@@ -16,6 +16,10 @@
   color: $tertiaryfonttcolor;
   font-family: $tertiaryfont;
 
+  h1{
+    font-weight: 900;
+    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.85);
+  }
 
 
   &__Destaque {
