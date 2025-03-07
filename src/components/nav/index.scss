@@ -81,7 +81,7 @@
 
         button {
           background-color: transparent;
-          border: 2px solid $yellow;
+          border: 2px solid $wt;
           color: $tertiaryfonttcolor;
           padding: 0.5rem 1rem;
           cursor: pointer;
@@ -90,7 +90,7 @@
           transition: background-color 0.3s ease;
 
           &:hover {
-            background-color: $yellow;
+            background-color: $wt;
             color: $fontcolor;
           }
         }
@@ -188,7 +188,7 @@
     margin-top: 0;
 
     button {
-      border: 2px solid $yellow;
+      border: 2px solid $wt;
       padding: 0.5rem 1rem;
       border-radius: 5px;
     }
