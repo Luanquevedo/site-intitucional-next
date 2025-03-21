@@ -67,6 +67,15 @@ const Footer = () => {
           >
             <Image src="/images/tk.svg" alt="TikTok" width={24} height={24} />
           </Link>
+
+          <Link
+            href="https://br.pinterest.com/cukaeventos/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Siga-nos no Pinterest"
+          >
+            <Image src="/images/pr.svg" alt="Pinterest" width={24} height={24} />
+          </Link>
         </div>
 
       </div>
