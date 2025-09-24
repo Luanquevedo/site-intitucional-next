@@ -29,17 +29,11 @@ const NavB = () => {
         <nav className={`nav ${isActive ? 'active' : ''}`} role="navigation" aria-label="Menu principal">
           
           {/* Logo dentro de um div para aplicar estilos corretamente */}
-          <Link href="/" aria-label="Página inicial">
+          
             <div className="logo">
-              <Image
-                src=""
-                alt="Seu Logo Aqui"
-                width={150}  // Ajuste da largura
-                height={80}  // Ajuste da altura
-                priority
-              />
+              <h1 style={{ color: 'white' }}>Seu Logo Aqui</h1>
             </div>
-          </Link>
+        
 
           {/* Botão hamburguer */}
           <button
