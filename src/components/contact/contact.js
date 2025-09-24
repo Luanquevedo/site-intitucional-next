@@ -6,10 +6,10 @@ const Contact = () => {
   return (
     <div>
       <Head>
-        <title>Áreas de Atendimento - Cuka Eventos</title>
+        <title>Áreas de Atendimento - Viva Eventos</title>
         <meta
           name="description"
-          content="Confira as áreas de atendimento do Cuka Eventos, incluindo as principais regiões de São Paulo e outras cidades do Brasil como Brasília, Recife, Ceará, Minas Gerais e Florianópolis."
+          content="Confira as áreas de atendimento do Viva Eventos, incluindo as principais regiões de São Paulo e outras cidades do Brasil como Brasília, Recife, Ceará, Minas Gerais e Florianópolis."
         />
         <meta
           name="keywords"

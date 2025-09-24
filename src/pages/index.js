@@ -25,18 +25,18 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <meta name="description" content="No Cuka Eventos, oferecemos um buffet personalizado e adaptável, com serviços completos para eventos como bodas, noivados e jantares familiares. Garantimos sofisticação e qualidade." />
+        <meta name="description" content="No Viva Eventos, oferecemos um buffet personalizado e adaptável, com serviços completos para eventos como bodas, noivados e jantares familiares. Garantimos sofisticação e qualidade." />
         <meta name="keywords" content="buffet, eventos personalizados, noivados, bodas, jantares, almoços, sofisticação, qualidade, serviço completo" />
-        <meta name="author" content="Cuka Eventos" />
+        <meta name="author" content="Viva Eventos" />
         <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="Cuka Eventos - Buffet Personalizado e Exclusivo para Eventos" />
-        <meta property="og:description" content="Proporcione uma experiência única em seu evento com o Cuka Eventos. Buffet personalizado com ingredientes selecionados e atendimento de excelência." />
+        <meta property="og:title" content="Viva Eventos - Buffet Personalizado e Exclusivo para Eventos" />
+        <meta property="og:description" content="Proporcione uma experiência única em seu evento com o Viva Eventos. Buffet personalizado com ingredientes selecionados e atendimento de excelência." />
         <meta property="og:image" content="/images/og-cuka.png" />
-        <meta property="og:url" content="https://www.cukaeventos.com.br" />
+        <meta property="og:url" content="https://www.vivaeventos.com.br" />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Cuka Eventos" />
+        <meta property="og:site_name" content="Viva Eventos" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Cuka Eventos - Buffet Personalizado e Exclusivo para Eventos" />
+        <meta name="twitter:title" content="Viva Eventos - Buffet Personalizado e Exclusivo para Eventos" />
         <meta name="twitter:description" content="Oferecemos um buffet com a melhor qualidade, ideal para eventos inesquecíveis." />
         <meta name="twitter:image" content="/images/og-cuka.png" />
       </Head>

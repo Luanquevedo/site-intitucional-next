@@ -6,7 +6,7 @@ const HeroContainer = () => {
     <section className="Hero__Container" role="region" aria-labelledby="hero-section">
       <article className="Hero__Container__Experience">
         <p>
-          No <strong>Cuka Eventos</strong>, acreditamos que a culinária vai muito além do sabor – ela é <span className="highlight">afeto, memória e história</span>. Criamos experiências gastronômicas exclusivas, trazendo o melhor dos sabores em cada evento.
+          No <strong>Viva Eventos</strong>, acreditamos que a culinária vai muito além do sabor – ela é <span className="highlight">afeto, memória e história</span>. Criamos experiências gastronômicas exclusivas, trazendo o melhor dos sabores em cada evento.
         </p>
       </article>
 

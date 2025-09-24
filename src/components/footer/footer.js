@@ -10,30 +10,30 @@ const Footer = () => {
         {/* Contatos */}
         <div className="Footer__Container__Itens">
           <Link
-            href="https://wa.me/5511939559833"
+            href="https://wa.me/5511974801320"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Entre em contato pelo WhatsApp"
             className="Footer__Container__Itens__Dados"
           >
             <Image src="/images/wpp.svg" alt="WhatsApp" width={24} height={24} />
-            <p>+55 11 93955-9833</p>
+            <p>+55 11 97480-1320</p>
           </Link>
 
           <Link
-            href="mailto:eventoscukacomercial@gmail.com"
-            aria-label="Envie um email para Cuka Eventos"
+            href="mailto:email@gmail.com"
+            aria-label="Envie um email para Viva Eventos"
             className="Footer__Container__Itens__Dados"
           >
             <Image src="/images/email.svg" alt="Email" width={24} height={24} />
-            <p>eventoscukacomercial@gmail.com</p>
+            <p>email@gmail.com</p>
           </Link>
         </div>
 
         {/* Redes Sociais */}
         <div className="Footer__Container__Redes">
           <Link
-            href="https://www.youtube.com/@temperodagrazzy"
+            href="https://www.youtube.com"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Assista ao nosso canal no YouTube"
@@ -42,7 +42,7 @@ const Footer = () => {
           </Link>
 
           <Link
-            href="https://www.facebook.com/temperodagrazzy?mibextid=ZbWKwL"
+            href="https://www.facebook.com"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Curta nossa página no Facebook"
@@ -51,7 +51,7 @@ const Footer = () => {
           </Link>
 
           <Link
-            href="https://www.instagram.com/cukaeventos.oficial?igsh=MWZ2cm81ZnM0OGF1OA=="
+            href="https://www.instagram.com"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Siga-nos no Instagram"
@@ -60,7 +60,7 @@ const Footer = () => {
           </Link>
 
           <Link
-            href="https://www.tiktok.com/@cukaeventos.oficial?_t=ZM-8uRJrUAZlBO&_r=1"
+            href="https://www.tiktok.com"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Siga-nos no TikTok"
@@ -69,7 +69,7 @@ const Footer = () => {
           </Link>
 
           <Link
-            href="https://br.pinterest.com/cukaeventos/"
+            href="https://br.pinterest.com"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Siga-nos no Pinterest"
@@ -82,7 +82,7 @@ const Footer = () => {
 
       {/* Copyright */}
       <div className="Footer__Cop">
-        <p>Copyright © {new Date().getFullYear()} Cuka Eventos. Todos os direitos reservados.</p>
+        <p>Copyright © {new Date().getFullYear()} Luan Quevedo. Todos os direitos reservados.</p>
       </div>
     </footer>
   );

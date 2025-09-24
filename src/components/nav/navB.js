@@ -32,8 +32,8 @@ const NavB = () => {
           <Link href="/" aria-label="Página inicial">
             <div className="logo">
               <Image
-                src="/logo.svg"
-                alt="Logo da empresa"
+                src=""
+                alt="Seu Logo Aqui"
                 width={150}  // Ajuste da largura
                 height={80}  // Ajuste da altura
                 priority

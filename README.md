@@ -1,13 +1,13 @@
 Documentação do Projeto 
 1. Visão Geral do Projeto
-Este projeto de site especializado em eventos de alta e médio nível. O site foi desenvolvido com foco em usabilidade, performance e otimização para mecanismos de busca (SEO). O principal objetivo é fornecer informações sobre os serviços oferecidos, assim como facilitar o contato entre os clientes e o buffet, incluindo uma funcionalidade de orçamento.
+Este projeto de site especializado em eventos. O site foi desenvolvido com foco em usabilidade, performance e otimização para mecanismos de busca (SEO). O principal objetivo é fornecer informações sobre os serviços oferecidos, assim como facilitar o contato entre os clientes e o buffet, incluindo uma funcionalidade de orçamento.
 
 Tecnologias Utilizadas
 React & Next: Framework utilizado para a construção do front-end.
 HTML5 & Sass: Para estruturação e estilização do site.
 JavaScript: Para a lógica interativa do site.
 
-2. Funcionalidades do Projeto
+1. Funcionalidades do Projeto
 1. Formulário de Contato
 O formulário de contato foi criado para facilitar a comunicação entre o cliente e o buffet. Ele contém os seguintes campos:
 
@@ -62,9 +62,3 @@ O formulário foi implementado utilizando React Hooks, mais especificamente o us
 
 2. Estilos
 Os estilos foram criados utilizando Sass. A arquitetura de estilos segue a metodologia BEM (Block, Element, Modifier) para garantir a organização e manutenção do código.
-
-7. Melhorias Futuras
-Integração com API de Orçamento: Implementação de um sistema de orçamentos automatizado, onde o cliente recebe uma resposta de orçamento com base nas informações fornecidas.
-Chat ao Vivo: Implementação de um chatbot.
-Integração com API para atualizar a galeria de forma automatica
-Sistema de Administração de Eventos: Para que os administradores possam gerenciar eventos e orçamentos.
