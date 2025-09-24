@@ -28,7 +28,7 @@ const FormContato = () => {
     `;
 
     // 🔹 Envio para WhatsApp
-    const phoneNumber = "5511939559833"; // Seu número com DDD e código do Brasil
+    const phoneNumber = "5511974801320"; // Seu número com DDD e código do Brasil
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappURL, "_blank");
 
