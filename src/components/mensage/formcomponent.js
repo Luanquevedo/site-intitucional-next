@@ -33,7 +33,7 @@ const FormContato = () => {
     window.open(whatsappURL, "_blank");
 
     // 🔹 Envio para E-mail
-    const emailDestino = "eventoscukacomercial@gmail.com";
+    const emailDestino = "email@gmail.com";
     const emailSubject = encodeURIComponent("Solicitação de Contato - Evento");
     const emailBody = encodeURIComponent(message);
     const mailtoLink = `mailto:${emailDestino}?subject=${emailSubject}&body=${emailBody}`;
