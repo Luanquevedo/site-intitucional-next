@@ -25,7 +25,7 @@ const card = [
 const CardCarrousel = memo(() => {
   return (
     <section className="card__carousel" aria-labelledby="gallery-title">
-      <h2 id="gallery-title" className="card__carousel__title">Galeria</h2>
+      <h2 id="gallery-title" className="card__carousel__title">Galeria Exemplo</h2>
       <Swiper
         className="card__carousel__container"
         slidesPerView={4}
