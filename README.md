@@ -1,6 +1,6 @@
-Documentação do Projeto - Tempero da Grazzy (Buffet)
+Documentação do Projeto 
 1. Visão Geral do Projeto
-Este projeto do site Tempero da Grazzy, especializado em eventos de alta e médio nível. O site foi desenvolvido com foco em usabilidade, performance e otimização para mecanismos de busca (SEO). O principal objetivo é fornecer informações sobre os serviços oferecidos, assim como facilitar o contato entre os clientes e o buffet, incluindo uma funcionalidade de orçamento.
+Este projeto de site especializado em eventos de alta e médio nível. O site foi desenvolvido com foco em usabilidade, performance e otimização para mecanismos de busca (SEO). O principal objetivo é fornecer informações sobre os serviços oferecidos, assim como facilitar o contato entre os clientes e o buffet, incluindo uma funcionalidade de orçamento.
 
 Tecnologias Utilizadas
 React & Next: Framework utilizado para a construção do front-end.
@@ -47,12 +47,6 @@ npm (gerenciador de pacotes do Node)
 
 Instalação
 
-Clone o repositório:
-
-git clone https://github.com/seu-usuario/Tempero-da-Grazzy.git
-Navegue até a pasta do projeto:
-
-cd Tempero-da-Grazzy
 Instale as dependências:
 
 npm install
